@@ -1,0 +1,118 @@
+Using directory /var/www/html/
+/var/www/html/view/footer.htm:1:<div style="margin-top: 100px; text-align: center"><img src="<?=$site['base']?>/img/footer.png" style="width: 300px; height: auto;"></div>
+/var/www/html/view/Admin/admin_index.htm:8:<li><strong>Posts: </strong> <?=$posts?></li>
+/var/www/html/view/Admin/admin_index.htm:9:<li><strong>Comments: </strong> <?=$comments?></li>
+/var/www/html/view/Admin/admin_index.htm:10:<li><strong>Users: </strong> <?=$users?></li>
+/var/www/html/view/User/admin_edit.htm:2:<h3><?=$u->username?></h3>
+/var/www/html/view/User/profile.htm:5:<img class="avatar" style="float: right" src="<?=$site['base']?><?=$avatar?>"/>
+/var/www/html/view/User/profile.htm:6:<h3><?=$u->username?></h3>
+/var/www/html/view/User/admin_index.htm:20:<td><img style="max-width: 32px; height: auto; max-height: 32px;" src="<?=$site['base']?><?=$avatar?>" <?=$avatar?></td>
+/var/www/html/view/User/admin_index.htm:21:<td><a href="<?=$site['base']?>/admin/user/edit/<?=$u->id?>"><?=$u->username?></a></td>
+/var/www/html/view/User/admin_index.htm:22:<td><?=$u->displayname?></td>
+/var/www/html/view/User/admin_index.htm:23:<td><?=$u->email?></td>
+/var/www/html/view/User/admin_index.htm:24:<td><?=$u->created?></td>
+/var/www/html/view/User/admin_index.htm:25:<td><?=$types[$u->level]?></td>
+/var/www/html/view/User/admin_index.htm:27:<a class="btn btn-danger" href="<?=$site['base']?>/admin/user/delete/<?=$u->id?>"><i class="fa fa-times"></i></a>
+/var/www/html/view/User/admin_index.htm:28:<a class="btn btn-primary" href="<?=$site['base']?>/user/view/<?=$u->id?>"><i class="fa fa-eye"></i></a>
+/var/www/html/view/User/admin_index.htm:29:<a class="btn btn-default" href="<?=$site['base']?>/admin/user/edit/<?=$u->id?>"><i class="fa fa-pencil"></i></a>
+/var/www/html/view/User/add.htm:21:<p>Already have an account? Just <a href="<?=$site['base']?>/user/login">Login</a>
+/var/www/html/view/User/login.htm:16:<p>Don't have an account yet? Why not <a href="<?=$site['base']?>/user/add">Register</a>
+/var/www/html/view/User/view.htm:3:<img style="float: right" src="<?=$site['base']?><?=$avatar?>" class="avatar"/>
+/var/www/html/view/User/view.htm:4:<h2><?=$u->displayname?> (<?=$u->username?>)</h2>
+/var/www/html/view/User/view.htm:7:<?=$u->bio?>
+/var/www/html/view/User/view.htm:14:<li><a href="<?=$site['base']?>/blog/view/<?=$article->id?>"><?=$article->title?></a><br/><small><?=nicedate($article->published)?></small></li>
+/var/www/html/view/User/view.htm:23:<li><a href="<?=$site['base']?>/blog/view/<?=$comment->blog_id?>"><?=$comment->subject?></a><br/><small><?=nicedate($comment->created)?></small></li>
+/var/www/html/view/Comment/admin_index.htm:18:<a href="<?=$site['base']?>/user/view/<?=$comment['Users']->id?>"><?=$comment['Users']->username?></a>
+/var/www/html/view/Comment/admin_index.htm:20:<td><?=$comment['Comments']->subject?></td>
+/var/www/html/view/Comment/admin_index.htm:21:<td style="font-size: 80%"><?=$comment['Comments']->message?></td>
+/var/www/html/view/Comment/admin_index.htm:23:<a href="<?=$site['base']?>/blog/view/<?=$comment['Posts']->id?>"><?=$comment['Posts']->title?></a>
+/var/www/html/view/Comment/admin_index.htm:26:<a class="btn btn-success" href="<?=$site['base']?>/blog/moderate/<?=$comment['Comments']->id?>/1"><i class="fa fa-check"></i></a>
+/var/www/html/view/Comment/admin_index.htm:27:<a class="btn btn-danger" href="<?=$site['base']?>/blog/moderate/<?=$comment['Comments']->id?>/0"><i class="fa fa-times"></i></a>
+/var/www/html/view/Comment/admin_index.htm:28:<a class="btn btn-default" href="<?=$site['base']?>/admin/comment/edit/<?=$comment['Comments']->id?>"><i class="fa fa-pencil"></i></a>
+/var/www/html/view/Comment/admin_index.htm:51:<a href="<?=$site['base']?>/user/view/<?=$comment['Users']->id?>"><?=$comment['Users']->username?></a>
+/var/www/html/view/Comment/admin_index.htm:53:<td><?=$comment['Comments']->subject?></td>
+/var/www/html/view/Comment/admin_index.htm:54:<td style="font-size: 80%"><?=$comment['Comments']->message?></td>
+/var/www/html/view/Comment/admin_index.htm:56:<a href="<?=$site['base']?>/blog/view/<?=$comment['Posts']->id?>"><?=$comment['Posts']->title?></a>
+/var/www/html/view/Comment/admin_index.htm:59:<a class="btn btn-danger" href="<?=$site['base']?>/blog/moderate/<?=$comment['Comments']->id?>/0"><i class="fa fa-times"></i></a>
+/var/www/html/view/Comment/admin_index.htm:60:<a class="btn btn-default" href="<?=$site['base']?>/admin/comment/edit/<?=$comment['Comments']->id?>"><i class="fa fa-pencil"></i></a>
+/var/www/html/view/navbar.htm:10:          <a class="navbar-brand" href="<?=$site['base']?>/"><?= $site['name'] ?></a>
+/var/www/html/view/navbar.htm:14:            <li><a href="<?=$site['base']?>/">Home</a></li>
+/var/www/html/view/navbar.htm:16:            <li><a href="<?= $site['base'] ?>/<?= $item['link']?>"><?= $item['label']?></a></li>
+/var/www/html/view/navbar.htm:19:            <li><a href="<?= $site['base'] ?>/selftest">Self Test</a></li>
+/var/www/html/view/navbar.htm:26:          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?= $user['username'] ?> <span class="caret"></span></a>
+/var/www/html/view/navbar.htm:28:            <li><a href="<?= $site['base'] ?>/user/profile">Edit Profile</a></li>
+/var/www/html/view/navbar.htm:30:            <li><a href="<?= $site['base'] ?>/user/logout">Logout</a></li>
+/var/www/html/view/navbar.htm:34:            <li><a href="<?= $site['base'] ?>/user/add">Register</a></li>
+/var/www/html/view/navbar.htm:35:            <li><a href="<?= $site['base'] ?>/user/login?from=<?= urlencode($site['path']) ?>">Login</a></li>
+/var/www/html/view/admin.htm:19:            <li class="<?=$class?>"><a href="<?= $site['base'] ?>/<?= $item['link']?>"><i class="fa fa-<?=$item['icon']?> adminicon"></i> <?= $item['label']?></a></li>
+/var/www/html/view/admin.htm:25:		<div class="alert alert-<?=$message['type']?>"><?=$message['message']?></div>
+/var/www/html/view/admin.htm:27:	<?= $content ?>
+/var/www/html/view/Blog/index.htm:2:<h2><?=$site['front_title']?></h2>
+/var/www/html/view/Blog/index.htm:4:<h2><?=$category->title ?></h2>
+/var/www/html/view/Blog/index.htm:21:<h3><a href="<?=$site['base']?>/blog/view/<?=$post->id?>"><?=htmlspecialchars($post->title)?></a></h3>
+/var/www/html/view/Blog/index.htm:22:<h4>Posted by <a href="<?=$site['base']?>/user/view/<?=$author->id?>"><?=$author->displayname?></a> on <?=nicedate($post->created)?></h4>
+/var/www/html/view/Blog/index.htm:26:<a href="<?=$site['base']?>/blog/index/<?=htmlspecialchars($category->id)?>"><?= htmlspecialchars($category->title) ?></a><? if(($num + 1) < sizeof($blog['Categories'])) { echo ', '; } ?>
+/var/www/html/view/Blog/index.htm:31:<?=htmlspecialchars($post->summary)?>
+/var/www/html/view/Blog/results.htm:24:<h3><a href="<?=$site['base']?>/blog/view/<?=$post->id?>"><?=htmlspecialchars($post->title)?></a></h3>
+/var/www/html/view/Blog/results.htm:25:<h4>Posted by <?=htmlspecialchars($author->username)?> on <?=nicedate($post->created)?></h4>
+/var/www/html/view/Blog/results.htm:29:<a href="<?=$site['base']?>/blog/index/<?=$category->id?>"><?= htmlspecialchars($category->title)?></a><? if(($num + 1) < sizeof($blog['Categories'])) { echo ', '; } ?>
+/var/www/html/view/Blog/results.htm:34:<?=htmlspecialchars($post->summary)?>
+/var/www/html/view/Blog/admin_index.htm:1:<p style="float: right; margin-top: 10px;"><a class="btn btn-default" href="<?=$site['base']?>/admin/blog/add"><i class="fa fa-plus"></i> Add Post</a></p>
+/var/www/html/view/Blog/admin_index.htm:29:<a style="float: right" href="<?=$site['base']?>/admin/blog/delete/<?=$post['id']?>">&times;</a>
+/var/www/html/view/Blog/admin_index.htm:30:<a href="<?=$site['base']?>/admin/blog/edit/<?=$post['id']?>"><?=$post['title']?></a>
+/var/www/html/view/Blog/admin_index.htm:32:<td><?=$author->username?></td>
+/var/www/html/view/Blog/admin_index.htm:38:<?=$category['title']?>
+/var/www/html/view/Blog/admin_index.htm:43:<td><?=$post['created']?></td>
+/var/www/html/view/Blog/admin_index.htm:44:<td><?=empty($post['published']) ? '-' : $post['published']?></td>
+/var/www/html/view/Blog/view.htm:15:<h2><?=htmlspecialchars($post->title)?></h2>
+/var/www/html/view/Blog/view.htm:16:<h4>Posted by <a href="<?=$site['base']?>/user/view/<?=$author->id?>"><?=htmlspecialchars($author->displayname)?></a> on <?=nicedate($post->created)?></h4>
+/var/www/html/view/Blog/view.htm:20:<a href="<?=$site['base']?>/blog/index/<?=$category->id?>"><?= htmlspecialchars($category->title) ?></a><? if(($num + 1) < sizeof($blog['Categories'])) { echo ', '; } ?>
+/var/www/html/view/Blog/view.htm:25:<?=htmlspecialchars($post->content)?>
+/var/www/html/view/Blog/view.htm:48:<div class="comment <?=$class?>">
+/var/www/html/view/Blog/view.htm:50:<h4><?=htmlspecialchars($comment['Comments']->subject)?> <span style="float: right">
+/var/www/html/view/Blog/view.htm:51:<a href="<?=$site['base']?>/user/view/<?=$comment['Users']->id?>"><?=$comment['Users']->displayname?></a>
+/var/www/html/view/Blog/view.htm:52:<br/><img src="<?=$site['base']?><?=$avatar?>" class="avatar"/></span></h4>
+/var/www/html/view/Blog/view.htm:53:<h6><?=nicedate($comment['Comments']->created)?></h6>
+/var/www/html/view/Blog/view.htm:54:<?=htmlspecialchars($comment['Comments']->message)?>
+/var/www/html/view/Blog/view.htm:59:<a href="<?=$site['base']?>/blog/moderate/<?=$comment['Comments']->id?>/0" class="btn btn-danger">Delete</a>
+/var/www/html/view/Blog/view.htm:60:<a href="<?=$site['base']?>/admin/comment/edit/<?=$comment['Comments']->id?>" class="btn btn-default">Edit</a>
+/var/www/html/view/Blog/view.htm:63:<a href="<?=$site['base']?>/blog/moderate/<?=$comment['Comments']->id?>/1" class="btn btn-success">Approve Comment</a>
+/var/www/html/view/Blog/view.htm:73:<p>You must be <a href="<?=$site['base']?>/user/add">registered</a> and <a href="<?=$site['base']?>/user/login">logged in</a> in order to leave a comment</p>
+/var/www/html/view/Selftest/index.htm:6:<td><?=($test_number+1)?></td>
+/var/www/html/view/Selftest/index.htm:7:<td><?=$test['name']?></td>
+/var/www/html/view/Page/admin_edit.htm:2:<h3><?=$pagetitle?></h3>
+/var/www/html/view/Page/display.htm:1:<h2><?=$pagetitle?></h2>
+/var/www/html/view/Page/display.htm:3:<?= eval("?>".$page); ?>
+/var/www/html/view/Page/admin_index.htm:30:<a href="<?=$site['base']?>/admin/page/delete/<?=$pagename?>" style="float: right">&times;</a>
+/var/www/html/view/Page/admin_index.htm:31:<a href="<?=$site['base']?>/admin/page/edit/<?=$pagename?>"><?=$pagetitle?></a>
+/var/www/html/view/header.htm:15:    <title><?=$site['name']?>: <?=$title?></title>
+/var/www/html/view/header.htm:27:<link rel="stylesheet" href="<?= $site['base'] ?>/css/site.css">
+/var/www/html/view/header.htm:30:<script src="<?=$site['base']?>/js/jquery-1.10.9.alpha.js"></script>
+/var/www/html/view/header.htm:36:<script src="<?=$site['base']?>/js/site.js"></script>
+/var/www/html/view/header.htm:39:<link href="<?=$site['base']?>/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+/var/www/html/view/header.htm:40:<script type="text/javascript" src="<?=$site['base']?>/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+/var/www/html/view/Category/admin_edit.htm:2:<h3><?=$category->title?></h3>
+/var/www/html/view/Category/admin_index.htm:28:<a style="float: right" href="<?=$site['base']?>/admin/category/delete/<?=$category['id']?>">&times;</a>
+/var/www/html/view/Category/admin_index.htm:29:<a href="<?=$site['base']?>/admin/category/edit/<?=$category['id']?>"><?=$category['title']?></a>
+/var/www/html/view/Category/admin_index.htm:31:<td><?= $counts[$category['id']] ?></td>
+/var/www/html/view/robpress.htm:4:<div style="background-image: url('<?=$site['base']?>/img/robpress.png'); width: 100%; height: <?=$height?>px; color: white; font-size: 72px; padding-top: 50px; padding-left: 50px; margin-bottom: 10px; text-shadow: 2px 2px #c0c0c0;">
+/var/www/html/view/robpress.htm:5:<?=$site['subtitle']?>
+/var/www/html/view/default.htm:5:		<div class="alert alert-<?=$message['type']?>"><?=$message['message']?></div>
+/var/www/html/view/default.htm:7:	<?= $content ?>
+/var/www/html/view/Errorer/index.htm:1:<h2>Error <?= $ERROR['code'] ?>: <?= $ERROR['status'] ?></h2>
+/var/www/html/view/Errorer/index.htm:3:<div class="alert alert-danger"><strong>Error</strong>: <?= $ERROR['text'] ?></div>
+/var/www/html/view/Errorer/index.htm:12:<?=$ERROR['trace']?>
+/var/www/html/view/Errorer/405.htm:1:<?= View::instance()->render("Error/error.htm"); ?>
+/var/www/html/view/Errorer/403.htm:1:<?= View::instance()->render("Error/error.htm"); ?>
+/var/www/html/view/Errorer/404.htm:1:<?= View::instance()->render("Error/error.htm"); ?>
+/var/www/html/view/Errorer/error.htm:1:<h2>Error <?= $ERROR['code'] ?>: <?= $ERROR['status'] ?></h2>
+/var/www/html/view/Errorer/error.htm:3:<div class="alert alert-danger"><strong>Error</strong>: <?= $ERROR['text'] ?></div>
+/var/www/html/view/Errorer/error.htm:12:<?=$ERROR['trace']?>
+/var/www/html/view/Errorer/500.htm:1:<?= View::instance()->render("Error/error.htm"); ?>
+/var/www/html/view/Errorer/errorer.htm:1:<h2>Error <?= $ERROR['code'] ?>: <?= $ERROR['status'] ?></h2>
+/var/www/html/view/Errorer/errorer.htm:3:<div class="alert alert-danger"><strong>Error</strong>: <?= $ERROR['text'] ?></div>
+/var/www/html/view/Errorer/errorer.htm:12:<?=$ERROR['trace']?>
+/var/www/html/pages/rob.html:3:<p><img alt="" src="<?=BASE?>uploads/rob1.jpg" style="height:816px; width:612px" /></p>
+/var/www/html/pages/rob.html:5:<p><img alt="" src="<?=BASE?>uploads/rob2.jpg" style="height:750px; width:1000px" /></p>
+/var/www/html/pages/rob.html:7:<p><img alt="" src="<?=BASE?>uploads/rob3.jpg" style="height:750px; width:1000px" /></p>
+Binary file /var/www/html/img/robpress.png matches
