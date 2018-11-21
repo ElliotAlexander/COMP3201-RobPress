@@ -1,0 +1,144 @@
+Using directory /var/www/html
+/var/www/html/setup.php:7:echo '<p>Fixing folders</p>';
+/var/www/html/setup.php:12:echo '<p>Fixing permissions</p>';
+/var/www/html/setup.php:19:echo '<p>Permissions fixed</p>';
+/var/www/html/setup.php:22:		echo '<p>It appears you have lost your database configuration file and password. Please contact Oli</p>';
+/var/www/html/utility/upload.php:38:echo "<script type='text/javascript'> window.parent.CKEDITOR.tools.callFunction($funcNum, '$url', '$message')</script>";
+/var/www/html/view/Contact/index.htm:17:	echo $form->start();
+/var/www/html/view/Contact/index.htm:18:	echo $form->add('from',array('type' => 'text', 'value' => $from));
+/var/www/html/view/Contact/index.htm:19:	echo $form->add('to',array('type' => 'hidden', 'value' => $to));
+/var/www/html/view/Contact/index.htm:20:	echo $form->add('subject',array('type' => 'text'));
+/var/www/html/view/Contact/index.htm:21:	echo $form->add('message',array('type' => 'textarea'));
+/var/www/html/view/Contact/index.htm:22:	echo $form->add('Send',array('type' => 'submit'));
+/var/www/html/view/Contact/index.htm:24:	echo $form->end();
+/var/www/html/view/User/admin_edit.htm:7:	echo $form->start();
+/var/www/html/view/User/admin_edit.htm:8:	echo $form->add('username');
+/var/www/html/view/User/admin_edit.htm:9:	echo $form->add('displayname',array('label' => 'Display Name'));
+/var/www/html/view/User/admin_edit.htm:10:	echo $form->add('password',array('type' => 'password'));
+/var/www/html/view/User/admin_edit.htm:11:	echo $form->add('level',array('type' => 'select', 'items' => array(1 => 'Normal User', 2 => 'Administrator')));
+/var/www/html/view/User/admin_edit.htm:12:	echo $form->add('bio',array('type' => 'wysiwyg'));
+/var/www/html/view/User/admin_edit.htm:13:	echo $form->add('avatar');
+/var/www/html/view/User/admin_edit.htm:14:	echo $form->add('Update',array('type' => 'submit'));
+/var/www/html/view/User/admin_edit.htm:15:	echo $form->end();
+/var/www/html/view/User/profile.htm:11:	echo $form->start(array('type' => 'file'));
+/var/www/html/view/User/profile.htm:12:	echo $form->add('displayname',array('label' => 'Display Name'));
+/var/www/html/view/User/profile.htm:13:	echo $form->add('password',array('type' => 'password', 'label' => 'Change Password','value' => ''));
+/var/www/html/view/User/profile.htm:14:	echo $form->add('bio',array('type' => 'wysiwyg'));
+/var/www/html/view/User/profile.htm:15:	echo $form->add('avatar',array('type' => 'file'));
+/var/www/html/view/User/profile.htm:17:		echo $form->add('reset',array('type' => 'checkbox','label' => 'Reset Avatar'));
+/var/www/html/view/User/profile.htm:19:	echo $form->add('Update',array('type' => 'submit'));
+/var/www/html/view/User/profile.htm:20:	echo $form->end();
+/var/www/html/view/User/add.htm:8:	echo $form->start();
+/var/www/html/view/User/add.htm:9:	echo $form->add('username');
+/var/www/html/view/User/add.htm:10:	echo $form->add('displayname',array('label' => 'Display Name'));
+/var/www/html/view/User/add.htm:11:	echo $form->add('email');
+/var/www/html/view/User/add.htm:12:	echo '<hr/>';
+/var/www/html/view/User/add.htm:13:	echo $form->add('password',array('type' => 'password','value' => ''));
+/var/www/html/view/User/add.htm:14:	echo $form->add('password2',array('type' => 'password','value' => '', 'label' => 'Confirm Password'));
+/var/www/html/view/User/add.htm:15:	echo '<hr/>';
+/var/www/html/view/User/add.htm:16:	echo $form->add('Register',array('type' => 'submit'));
+/var/www/html/view/User/add.htm:17:	echo $form->end();
+/var/www/html/view/User/login.htm:8:	echo $form->start();
+/var/www/html/view/User/login.htm:9:	echo $form->add('username');
+/var/www/html/view/User/login.htm:10:	echo $form->add('password',array('type' => 'password','value' => ''));
+/var/www/html/view/User/login.htm:11:	echo $form->add('Login',array('type' => 'submit'));
+/var/www/html/view/User/login.htm:12:	echo $form->end();
+/var/www/html/view/Settings/admin_index.htm:5:echo $form->start();
+/var/www/html/view/Settings/admin_index.htm:10:echo $form->add($setting->setting,array('label' => $setting->title, 'type' => $setting->type, 'value' => $setting->value));
+/var/www/html/view/Settings/admin_index.htm:15:echo $form->add('Save Settings',array('type' => 'submit'));
+/var/www/html/view/Settings/admin_index.htm:16:echo $form->end(); 
+/var/www/html/view/Comment/admin_edit.htm:5:	echo $form->start();
+/var/www/html/view/Comment/admin_edit.htm:6:	echo $form->add('subject');
+/var/www/html/view/Comment/admin_edit.htm:7:	echo $form->add('message',array('type' => 'wysiwyg'));
+/var/www/html/view/Comment/admin_edit.htm:8:	echo $form->add('Save',array('type' => 'submit'));
+/var/www/html/view/Comment/admin_edit.htm:9:	echo $form->end();
+/var/www/html/view/Blog/index.htm:26:<a href="<?=$site['base']?>/blog/index/<?=$category->id?>"><?= $category->title ?></a><? if(($num + 1) < sizeof($blog['Categories'])) { echo ', '; } ?>
+/var/www/html/view/Blog/results.htm:3:	echo $form->start();
+/var/www/html/view/Blog/results.htm:4:	echo $form->add('search');
+/var/www/html/view/Blog/results.htm:5:	echo $form->add('Search',array('type' => 'submit', 'value' => $search));
+/var/www/html/view/Blog/results.htm:6:	echo $form->end();
+/var/www/html/view/Blog/results.htm:29:<a href="<?=$site['base']?>/blog/index/<?=$category->id?>"><?= $category->title ?></a><? if(($num + 1) < sizeof($blog['Categories'])) { echo ', '; } ?>
+/var/www/html/view/Blog/admin_edit.htm:5:	echo $form->start();
+/var/www/html/view/Blog/admin_edit.htm:10:	echo $form->add('title',array('placeholder' => 'Enter Title'));
+/var/www/html/view/Blog/admin_edit.htm:11:	echo $form->add('summary',array('type' => 'textarea'));
+/var/www/html/view/Blog/admin_edit.htm:12:	echo $form->add('content',array('type' => 'wysiwyg'));
+/var/www/html/view/Blog/admin_edit.htm:17:	echo $form->add('published',array('type' => 'datetime', 'default' => date('Y-m-d H:i'), 'label' => 'Publish Date'));
+/var/www/html/view/Blog/admin_edit.htm:18:	echo $form->add('categories',array('type' => 'checkboxes', 'label' => 'Categories', 'items' => $categories));
+/var/www/html/view/Blog/admin_edit.htm:19:	echo '<hr/>';
+/var/www/html/view/Blog/admin_edit.htm:20:	echo $form->add('Save Draft',array('type' => 'submit','class' => 'btn-success'));
+/var/www/html/view/Blog/admin_edit.htm:21:	echo ' ';
+/var/www/html/view/Blog/admin_edit.htm:22:	echo $form->add('Publish',array('type' => 'submit'));
+/var/www/html/view/Blog/admin_edit.htm:27:echo $form->end();
+/var/www/html/view/Blog/search.htm:8:	echo $form->start();
+/var/www/html/view/Blog/search.htm:9:	echo $form->add('search');
+/var/www/html/view/Blog/search.htm:10:	echo $form->add('Search',array('type' => 'submit'));
+/var/www/html/view/Blog/search.htm:11:	echo $form->end();
+/var/www/html/view/Blog/admin_index.htm:39:<? if($id < (sizeof($blog['Categories']) - 1)) { echo ', '; } ?>
+/var/www/html/view/Blog/view.htm:20:<a href="<?=$site['base']?>/blog/index/<?=$category->id?>"><?= $category->title ?></a><? if(($num + 1) < sizeof($blog['Categories'])) { echo ', '; } ?>
+/var/www/html/view/Blog/view.htm:76:echo $form->start(array('action' => $site['base'] . '/blog/comment/' . $post->id));
+/var/www/html/view/Blog/view.htm:77:echo $form->add('user_id',array('type' => 'hidden', 'value' => $user['id']));
+/var/www/html/view/Blog/view.htm:78:echo $form->add('subject',array('type' => 'text', 'placeholder' => 'Enter Subject'));
+/var/www/html/view/Blog/view.htm:79:echo $form->add('message',array('type' => 'wysiwyg','label' => 'Your message'));
+/var/www/html/view/Blog/view.htm:80:echo $form->add('Submit',array('type' => 'submit'));
+/var/www/html/view/Blog/view.htm:81:echo $form->end();
+/var/www/html/view/Blog/admin_add.htm:5:	echo $form->start();
+/var/www/html/view/Blog/admin_add.htm:10:	echo $form->add('title',array('placeholder' => 'Enter Title'));
+/var/www/html/view/Blog/admin_add.htm:11:	echo $form->add('summary',array('type' => 'textarea'));
+/var/www/html/view/Blog/admin_add.htm:12:	echo $form->add('content',array('type' => 'wysiwyg'));
+/var/www/html/view/Blog/admin_add.htm:17:	echo $form->add('published',array('type' => 'datetime', 'default' => date('Y-m-d H:i'), 'label' => 'Publish Date'));
+/var/www/html/view/Blog/admin_add.htm:18:	echo $form->add('categories',array('type' => 'checkboxes', 'label' => 'Categories', 'items' => $categories));
+/var/www/html/view/Blog/admin_add.htm:19:	echo '<hr/>';
+/var/www/html/view/Blog/admin_add.htm:20:	echo $form->add('Save Draft',array('type' => 'submit','class' => 'btn-success'));
+/var/www/html/view/Blog/admin_add.htm:21:	echo ' ';
+/var/www/html/view/Blog/admin_add.htm:22:	echo $form->add('Publish',array('type' => 'submit'));
+/var/www/html/view/Blog/admin_add.htm:27:echo $form->end();
+/var/www/html/view/Selftest/index.htm:5:<tr class="<?if($test['result']) { echo 'success'; } else { echo 'danger'; } ?>">
+/var/www/html/view/Selftest/index.htm:8:<td><? if(empty($test['errors'])) { echo ''; } else { echo $test['errors']; } ?></td>
+/var/www/html/view/Selftest/index.htm:9:<td><? if($test['result']) { echo '<i class="fa fa-check"></i>'; } else { echo '<i class="fa fa-times"></i>'; } ?></td>
+/var/www/html/view/Page/admin_edit.htm:6:echo $form->start();
+/var/www/html/view/Page/admin_edit.htm:7:echo $form->add('content',array('type' => 'wysiwyg', 'value' => h($page)));
+/var/www/html/view/Page/admin_edit.htm:8:echo $form->add('Save Page',array('type' => 'submit'));
+/var/www/html/view/Page/admin_edit.htm:9:echo $form->end();
+/var/www/html/view/Page/admin_index.htm:11:	echo $form->start(array('action' => $site['base'].'/admin/page/add'));
+/var/www/html/view/Page/admin_index.htm:12:	echo $form->add('title',array('placeholder' => 'Enter Title'));
+/var/www/html/view/Page/admin_index.htm:13:	echo $form->add('Add Page',array('type' => 'submit'));
+/var/www/html/view/Page/admin_index.htm:14:	echo $form->end();
+/var/www/html/view/Category/admin_edit.htm:6:	echo $form->start(array('action' => $site['base'].'/admin/category/edit/' . $category->id));
+/var/www/html/view/Category/admin_edit.htm:7:	echo $form->add('title',array('value' => $category->title));
+/var/www/html/view/Category/admin_edit.htm:8:	echo $form->add('Edit',array('type' => 'submit'));
+/var/www/html/view/Category/admin_edit.htm:9:	echo $form->end();
+/var/www/html/view/Category/admin_index.htm:9:	echo $form->start(array('action' => $site['base'].'/admin/category/add'));
+/var/www/html/view/Category/admin_index.htm:10:	echo $form->add('title',array('placeholder' => 'Enter Title'));
+/var/www/html/view/Category/admin_index.htm:11:	echo $form->add('Add',array('type' => 'submit'));
+/var/www/html/view/Category/admin_index.htm:12:	echo $form->end();
+Binary file /var/www/html/uploads/rob1.jpg matches
+Binary file /var/www/html/uploads/rob3.jpg matches
+Binary file /var/www/html/uploads/rob2.jpg matches
+/var/www/html/controllers/api.php:11:			echo json_encode(array('error' => '403')); die();
+/var/www/html/controllers/api.php:28:			echo json_encode(array('error' => '404')); die();
+/var/www/html/controllers/api.php:31:		echo json_encode($results);
+/var/www/html/controllers/controller.phps:97:		echo View::instance()->render($this->layout . '.htm');
+/var/www/html/controllers/controller.php:103:		echo View::instance()->render($this->layout . '.htm');
+/var/www/html/.bashrc:94:alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+/var/www/html/ui/userref.htm:2:	<?php echo Markdown::instance()->
+/var/www/html/ui/layout.htm:4:		<meta charset="<?php echo $ENCODING; ?>" />
+/var/www/html/ui/layout.htm:5:		<title>Powered by <?php echo $PACKAGE; ?></title>
+/var/www/html/ui/layout.htm:6:		<base href="<?php echo $SCHEME.'://'.$HOST.':'.$PORT.$BASE.'/'; ?>" />
+/var/www/html/ui/layout.htm:12:		<?php echo $this->render(Base::instance()->get('content')); ?>
+/var/www/html/ui/welcome.htm:3:	<h2>Version <?php echo $VERSION; ?></h2>
+/var/www/html/ui/welcome.htm:26:			<td><code><?php echo $class; ?></code></td>
+/var/www/html/ui/welcome.htm:29:				<input type="checkbox" <?php echo extension_loaded($module)?'checked="checked"':''?> onclick="return false" /> <code><?php echo $module; ?></code><br />
+/var/www/html/ui/welcome.htm:47:	<p>The <strong><a href="<?php echo $BASE; ?>/userref">User Reference</a></strong> is designed to serve as a handbook and programming guide. However, the online documentation at <code><a href="https://github.com/bcosca/fatfree" onclick="window.open(this.href); return false;">https://github.com/bcosca/fatfree</a></code> provides the latest and most comprehensive information about the framework.</p>
+/var/www/html/ui/welcome.htm:48:	<p>Take a close look at the Fat-Free <strong><a href="<?php echo $BASE; ?>/lib/api">API Documentation</a></strong> for in-depth information about the framework.</p>
+/var/www/html/ui/welcome.htm:60:	<p><code><?php echo Base::instance()->format('Page rendered in {0} msecs / Memory usage {1} Kibytes',round(1e3*(microtime(TRUE)-$TIME),2),round(memory_get_usage(TRUE)/1e3,1)); ?></code></p>
+/var/www/html/helpers/string.php:93:		return sprintf(
+/var/www/html/helpers/string.php:208:			$format = sprintf(
+/var/www/html/helpers/string.php:234:			$key = sprintf($format, preg_quote($key, '/'));
+/var/www/html/helpers/string.php:278:				$kleenex = sprintf(
+/var/www/html/helpers/string.php:297:				$kleenex = sprintf(
+/var/www/html/helpers/string.php:437:				$replace[] = sprintf($options['regex'], $segment);
+/var/www/html/helpers/string.php:448:		return preg_replace(sprintf($options['regex'], $phrase), $format, $text);
+/var/www/html/helpers/hash.php:441: * The `$format` string can use any format options that `vsprintf()` and `sprintf()` do.
+/var/www/html/helpers/hash.php:445: * @param string $format Format string into which values will be inserted, see sprintf()
+/var/www/html/helpers/hash.php:448: * @see sprintf()
+/var/www/html/helpers/hash.php:475:			$out[] = vsprintf($format, $args);
